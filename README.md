@@ -22,7 +22,7 @@ JavaScript Package for Creating an array without duplicates
 
 #### For Production
 ```js
-<script src="https://cdn.rawgit.com/Prosen-Ghosh/list-unique/a03abce7/unique.js"></script>
+<script src="https://cdn.rawgit.com/Prosen-Ghosh/list-unique/a10489e4/unique.js"></script>
 ```
 #### For Development
 ```js
