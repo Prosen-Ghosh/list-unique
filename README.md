@@ -14,7 +14,7 @@ JavaScript Package for Creating an array without duplicates
 ## Features
 
 
-## [`npm`] Install
+## `npm` Install
 
 `npm install --save list-unique`
 
@@ -29,15 +29,7 @@ JavaScript Package for Creating an array without duplicates
 <script src="https://rawgit.com/Prosen-Ghosh/list-unique/master/unique.js"></script>
 ```
 
-## Development Dependencies
-
-Package | Version | Dev
---- |:---:|:---:
-[chai](https://www.npmjs.com/package/chai) | ^4.1.2 | ✔
-[mocha](https://www.npmjs.com/package/mocha) | ^3.5.3 | ✔
-[node-readme](https://www.npmjs.com/package/node-readme) | ^0.1.9 | ✔
-
-#Usage
+## Usage
 
 ```js
 const list = require('list-unique');
