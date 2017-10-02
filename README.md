@@ -14,9 +14,20 @@ JavaScript Package for Creating an array without duplicates
 ## Features
 
 
-## Install
+## [`npm`] Install
 
 `npm install --save list-unique`
+
+## Script tag
+
+#### For Production
+```js
+<script src="https://cdn.rawgit.com/Prosen-Ghosh/list-unique/a03abce7/unique.js"></script>
+```
+#### For Development
+```js
+<script src="https://rawgit.com/Prosen-Ghosh/list-unique/master/unique.js"></script>
+```
 
 ## Development Dependencies
 
@@ -26,18 +37,19 @@ Package | Version | Dev
 [mocha](https://www.npmjs.com/package/mocha) | ^3.5.3 | ✔
 [node-readme](https://www.npmjs.com/package/node-readme) | ^0.1.9 | ✔
 
-## Usage
+#Usage
 
 ```js
 const list = require('list-unique');
 
+list.unique([1,2,3,6,4,1,1,2,]);
+//=> [ 1, 2, 3, 6, 4 ]
 
 list.intersection([1,2,1,3],[1,2,2,5,4,6,2])
 //=> [ 1, 2 ]
 
-list.unique([1,2,3,6,4,1,1,2,]);
-//=> [ 1, 2, 3, 6, 4 ]
-
+list.diff([1,2,1,3],[1,2,2,,2])
+//=> [ 3 ]
 ```
 
 ## Author
