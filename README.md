@@ -45,11 +45,39 @@ const list = require('list-unique');
 list.unique([1,2,3,6,4,1,1,2,]);
 //=> [ 1, 2, 3, 6, 4 ]
 
-list.intersection([1,2,1,3],[1,2,2,5,4,6,2])
+list.union([1,2],[3,4,5])
+//=> [ 1, 2, 3, 4, 5 ]
+
+list.intersection([1,2,1,3],[1,2,2,5,4,6,2]);
 //=> [ 1, 2 ]
 
-list.diff([1,2,1,3],[1,2,2,,2])
+list.diff([1,2,1,3],[1,2,2,,2]);
 //=> [ 3 ]
+
+list.unique(["foo","bar","baz","foo","baz"]);
+//=> [ 'foo', 'bar', 'baz' ]
+
+list.union(["foo","bar"],["baz","bar"]);
+//=> [ 'foo', 'bar', 'baz' ]
+
+list.diff(["foo","bar","baz","foo","baz"],["foo","bar","baz","foo","baz"])
+//=> []
+
+list.intersection(["foo","bar","baz","foo","baz","bob"],["foo","bar","foo"]);
+//=> [ 'foo', 'bar' ]
+
+list.diff();
+//=> []
+
+list.intersection();
+//=> []
+
+list.unique();
+//=> []
+
+list.union()
+//=> []
+
 ```
 
 ## Author
