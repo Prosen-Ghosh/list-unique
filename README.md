@@ -26,7 +26,7 @@ Package | Version | Dev
 [mocha](https://www.npmjs.com/package/mocha) | ^3.5.3 | ✔
 [node-readme](https://www.npmjs.com/package/node-readme) | ^0.1.9 | ✔
 
-#Usage
+## Usage
 
 ```js
 const list = require('list-unique');
